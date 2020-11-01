@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="/assets/css/style.css" />
+		<title>Kaptionator</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-9">
+					<div class="row justify-content-center mb-2">
+						<div class="col-4 file-upload" id="content">
+							<div class="image-upload-wrap">
+								<input
+									class="file-upload-input"
+									type="file"
+									onchange="uploadImage('content');"
+									accept="image/*"
+								/>
+								<div class="drag-text">
+									<h3>Drag or Upload The Content Image</h3>
+								</div>
+							</div>
+							<div class="file-upload-content">
+								<img
+									class="file-upload-image"
+									src="#"
+									alt="your image"
+								/>
+								<div class="image-title-wrap">
+									<button
+										type="button"
+										onclick="removeImage('content')"
+										class="remove-image"
+									>
+										Remove Content Image
+									</button>
+								</div>
+							</div>
+						</div>
+						<div
+							class="col-2 d-flex align-items-center justify-content-center"
+						>
+							<h1 class="my-auto" style="font-size: 5rem">+</h1>
+						</div>
+						<div class="col-4 file-upload" id="style">
+							<div class="image-upload-wrap">
+								<input
+									class="file-upload-input"
+									type="file"
+									onchange="uploadImage('style');"
+									accept="image/*"
+								/>
+								<div class="drag-text">
+									<h3>Drag or Upload The Style Image</h3>
+								</div>
+							</div>
+							<div class="file-upload-content">
+								<img
+									class="file-upload-image"
+									src="#"
+									alt="your image"
+								/>
+								<div class="image-title-wrap">
+									<button
+										type="button"
+										onclick="removeImage('style');"
+										class="remove-image"
+									>
+										Remove Style Image
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-6">
+							<button
+								id="submit-btn"
+								class="form-control btn btn-primary"
+							>
+								Create New Design
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 justify-content-center align-items-center">
+					<div class="row">
+						<h1>Your Design</h1>
+					</div>
+					<div class="row">
+						<img
+							id="result-img"
+							class="img-fluid"
+							src="assets/images/load-image.jpg"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+            <a class="navbar-brand" href="#">Kaptionator</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#links">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="links">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home</a>
+                    <a class="nav-item nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>-->
+
+		<script
+			src="http://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+		<script src="/assets/js/main.js"></script>
+	</body>
+</html>
